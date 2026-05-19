@@ -1,0 +1,99 @@
+PHASE 2 - RAPPORT ML CLASSIQUE
+======================================================================
+
+Dataset : 5000 échantillons
+Features : 10000 (TF-IDF)
+Split : 80% train / 20% test
+
+RÉSULTATS PAR MODÈLE
+----------------------------------------------------------------------
+
+
+==================================================
+SVM (Linear)
+==================================================
+              precision    recall  f1-score   support
+
+    negative       0.87      0.86      0.87       496
+    positive       0.87      0.88      0.87       504
+
+    accuracy                           0.87      1000
+   macro avg       0.87      0.87      0.87      1000
+weighted avg       0.87      0.87      0.87      1000
+
+CV Score: 0.8572 ± 0.0081
+
+==================================================
+Logistic Regression
+==================================================
+              precision    recall  f1-score   support
+
+    negative       0.88      0.83      0.86       496
+    positive       0.84      0.88      0.86       504
+
+    accuracy                           0.86      1000
+   macro avg       0.86      0.86      0.86      1000
+weighted avg       0.86      0.86      0.86      1000
+
+CV Score: 0.8576 ± 0.0111
+
+==================================================
+Random Forest
+==================================================
+              precision    recall  f1-score   support
+
+    negative       0.84      0.87      0.85       496
+    positive       0.87      0.84      0.85       504
+
+    accuracy                           0.85      1000
+   macro avg       0.85      0.85      0.85      1000
+weighted avg       0.85      0.85      0.85      1000
+
+CV Score: 0.8360 ± 0.0113
+
+==================================================
+Naive Bayes
+==================================================
+              precision    recall  f1-score   support
+
+    negative       0.85      0.85      0.85       496
+    positive       0.85      0.85      0.85       504
+
+    accuracy                           0.85      1000
+   macro avg       0.85      0.85      0.85      1000
+weighted avg       0.85      0.85      0.85      1000
+
+CV Score: 0.8564 ± 0.0159
+
+==================================================
+Decision Tree
+==================================================
+              precision    recall  f1-score   support
+
+    negative       0.74      0.67      0.71       496
+    positive       0.71      0.77      0.74       504
+
+    accuracy                           0.72      1000
+   macro avg       0.73      0.72      0.72      1000
+weighted avg       0.72      0.72      0.72      1000
+
+CV Score: 0.7070 ± 0.0104
+
+==================================================
+KNN (k=5)
+==================================================
+              precision    recall  f1-score   support
+
+    negative       0.71      0.69      0.70       496
+    positive       0.70      0.73      0.71       504
+
+    accuracy                           0.71      1000
+   macro avg       0.71      0.71      0.71      1000
+weighted avg       0.71      0.71      0.71      1000
+
+CV Score: 0.7114 ± 0.0150
+
+
+MEILLEUR MODÈLE : SVM (Linear)
+Accuracy : 0.8700
+F1-Score : 0.8700
